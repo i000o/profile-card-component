@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+a:link {
+  color: inherit; /* no blue default link color */
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit; /* no purple visited links */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400, 700;
+  display: flex;
+  flex: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  margin: 150px 20px;
+  padding: 20px;
+  border-radius: 16px;
+  width: 50em;
+  height: auto;
+}
+
+img {
+  border-radius: 50px;
+  border: solid #FFFFFF;
+  max-width: 90px;
+  order: -1;
+}
+
+h1, h2 {
+  font-size: 0.95em;
+}
+
+h2, h3, p, hr {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 0.8em;
+}
+
+hr {
+  order: 0;
+  width: 100%;
+  opacity: 30%;
+}
+
+p {
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+h4, p {
+  order: 1;
+}
+
+footer {
+  display: none;
+}
+
+/*# sourceMappingURL=output.css.map */
