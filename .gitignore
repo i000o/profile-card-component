@@ -17,7 +17,7 @@
 .prettierignore
 
 # ignores all .md files
-.md
+*.md
 
 # does not ignore the README.md file
 !README.md
