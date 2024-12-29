@@ -49,7 +49,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Lessons
 
-1.
+1. `background-blend-mode` like in Photoshop
 2.
 3.
 4.
@@ -64,4 +64,5 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Useful resources
 
 []()
+
 # profile-card-component

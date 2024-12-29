@@ -18,12 +18,12 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400, 700;
   display: flex;
-  flex: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
-  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
 }
 
 section {
@@ -31,17 +31,43 @@ section {
   flex-direction: column;
   background-color: #FFFFFF;
   margin: 150px 20px;
-  padding: 20px;
   border-radius: 16px;
   width: 50em;
   height: auto;
 }
 
-img {
+img.bg {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  order: -2;
+}
+
+img.profile {
   border-radius: 50px;
-  border: solid #FFFFFF;
+  border: solid #FFFFFF 5px;
   max-width: 90px;
   order: -1;
+  align-self: center;
+  z-index: 1;
+  position: absolute;
+  top: 240px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+h1 {
+  margin-right: 4px;
+}
+
+h2 {
+  margin-left: 4px;
 }
 
 h1, h2 {
@@ -55,23 +81,38 @@ h2, h3, p, hr {
 
 h3 {
   font-size: 0.8em;
+  margin: 0;
 }
 
 hr {
   order: 0;
   width: 100%;
   opacity: 30%;
+  margin: 25px 0 0 0;
+}
+
+div.stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+div.l-stat, div.center-stat, div.r-stat {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 p {
   font-size: 0.6em;
   letter-spacing: 0.2em;
+  margin: -20px 0 30px 0;
 }
 
 h4 {
   font-size: 1.2em;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
 }
 
 h4, p {
@@ -80,6 +121,9 @@ h4, p {
 
 footer {
   display: none;
+  justify-content: center;
+  align-self: flex-end;
+  font-size: 0.7em;
 }
 
 /*# sourceMappingURL=output.css.map */
