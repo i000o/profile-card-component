@@ -21,9 +21,12 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
-  background-repeat: no-repeat;
   background-color: hsl(185, 75%, 39%);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: -180px -150px, 200px 350px;
+  background-size: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -120,10 +123,32 @@ h4, p {
 }
 
 footer {
-  display: none;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-self: flex-end;
-  font-size: 0.7em;
+  font-size: 0.5em;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 320px) {
+  img.profile {
+    max-width: 70px;
+  }
+  h1, h2 {
+    font-size: 0.9em;
+  }
+  h3 {
+    font-size: 0.7em;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  p {
+    font-size: 0.5em;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

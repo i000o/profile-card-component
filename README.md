@@ -40,19 +40,21 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 :alien:  
 :alien:
 
+[Firefox Dev tools](/images/README%20firefox.png)
+
 ## Time taken
 
-:alarm_clock: Mobile: 3 hrs  
-:alarm_clock: Desktop: 2 hrs
+:alarm_clock: Mobile: 4hrs
+:alarm_clock: Desktop:
 
 ## Feedback
 
 ## Lessons
 
 1. `background-blend-mode` like in Photoshop
-2.
-3.
-4.
+2. Firefox Dev tools allows you to see when an img hasn't loaded into the browser, pointing to a file path issue
+3. You can add multiple bg imgs and control with listed values, seperated by commas
+4. I'm speedy with flexing div items in a layout like this and adjusting space with margins
 
 ## Take forward
 
@@ -63,6 +65,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## Useful resources
 
-[]()
+[Background images with HTML & CSS](https://www.youtube.com/watch?v=zHZRFwWQt2w&t=501s)
 
 # profile-card-component
