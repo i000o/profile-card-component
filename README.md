@@ -45,7 +45,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Time taken
 
 :alarm_clock: Mobile: 4hrs
-:alarm_clock: Desktop:
+:alarm_clock: Desktop: 1hr
 
 ## Feedback
 

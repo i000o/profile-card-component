@@ -122,6 +122,11 @@ footer {
 
 @media screen and (max-width: 320px) {
 
+    body { 
+        background-position: -140px -120px, 150px 300px; // XY position
+        // background-size: 110%;
+    }
+
     img.profile { 
         max-width: 70px;
     }
@@ -141,5 +146,90 @@ footer {
     p {
         font-size: 0.5em;
     }
-    
 }
+
+@media screen and (min-width: 425px) { 
+
+    body { 
+        background-size: 90%;
+    }
+
+    img.profile { 
+        top: 260px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body { 
+        background-size: 80%;
+        background-position: -250px -120px, 400px 300px; // XY position
+    }
+
+    section { 
+        max-width: 375px;
+    }
+
+    h1, h2 {
+        font-size: 1em;
+    }
+
+    h3 { 
+        font-size: 0.8em;
+    }
+
+    h4 { 
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body { 
+        height: 100svh;
+        background-size: 70%;
+        background-position: -250px -250px, 500px 500px; // XY position
+    }
+
+    section { 
+        max-width: 375px;
+    }
+
+    img.profile { 
+        top: 330px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    h3 { 
+        font-size: 1em;
+    }
+
+    h4 { 
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+
+    footer { 
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 1440px) { 
+
+    body { 
+        background-size: 80%;
+        background-position: -500px -450px, 650px 500px; // XY position
+    }
+
+    img.profile { 
+        top: 390px;
+    }
+}
+
