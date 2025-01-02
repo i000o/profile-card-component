@@ -45,7 +45,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 ## Time taken
 
 :alarm_clock: Mobile: 4hrs
-:alarm_clock: Desktop: 1hr
+:alarm_clock: Desktop: 1.5hr
 
 ## Feedback
 
@@ -55,6 +55,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 2. Firefox Dev tools allows you to see when an img hasn't loaded into the browser, pointing to a file path issue
 3. You can add multiple bg imgs and control with listed values, seperated by commas
 4. I'm speedy with flexing div items in a layout like this and adjusting space with margins
+5. I can't rely on Chrome Dev Tools for accurate viewport displays. I need to use actual browsers and mobile
+6. I styled mobile based on design of 375px but then needed to code 320px media queries - really annoying
 
 ## Take forward
 

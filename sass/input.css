@@ -133,9 +133,10 @@ footer {
   margin: 20px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   body {
     background-position: -140px -120px, 150px 300px;
+    background-size: 90%;
   }
   img.profile {
     max-width: 70px;
@@ -153,12 +154,35 @@ footer {
     font-size: 0.5em;
   }
 }
+@media screen and (min-width: 375px) {
+  img.profile {
+    max-width: 90px;
+  }
+  h1, h2 {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  p {
+    font-size: 0.6em;
+  }
+  footer {
+    bottom: 0px;
+  }
+}
 @media screen and (min-width: 425px) {
   body {
     background-size: 90%;
   }
   img.profile {
-    top: 260px;
+    top: 290px;
+  }
+  footer {
+    bottom: -10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -168,6 +192,9 @@ footer {
   }
   section {
     max-width: 375px;
+  }
+  img.profile {
+    top: 270px;
   }
   h1, h2 {
     font-size: 1em;
@@ -189,7 +216,7 @@ footer {
     max-width: 375px;
   }
   img.profile {
-    top: 330px;
+    top: 290px;
   }
   h1, h2 {
     font-size: 1.2em;
@@ -214,6 +241,6 @@ footer {
     background-position: -500px -450px, 650px 500px;
   }
   img.profile {
-    top: 390px;
+    top: 300px;
   }
 }/*# sourceMappingURL=input.css.map */

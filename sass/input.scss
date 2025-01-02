@@ -120,11 +120,13 @@ footer {
     margin: 20px;
 }
 
-@media screen and (max-width: 320px) {
+// redo these in actual viewport, not dev tools 
+
+@media screen and (min-width: 320px) {
 
     body { 
         background-position: -140px -120px, 150px 300px; // XY position
-        // background-size: 110%;
+        background-size: 90%;
     }
 
     img.profile { 
@@ -148,6 +150,34 @@ footer {
     }
 }
 
+@media screen and (min-width: 375px) { 
+
+    img.profile { 
+        max-width: 90px;
+    }
+
+    h1, h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 0.9em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    p { 
+        font-size: 0.6em;
+    }
+
+    footer { 
+        bottom: 0px;
+    }
+
+}
+
 @media screen and (min-width: 425px) { 
 
     body { 
@@ -155,7 +185,11 @@ footer {
     }
 
     img.profile { 
-        top: 260px;
+        top: 290px;
+    }
+
+    footer { 
+        bottom: -10px;
     }
 }
 
@@ -168,6 +202,10 @@ footer {
 
     section { 
         max-width: 375px;
+    }
+
+    img.profile { 
+        top: 270px;
     }
 
     h1, h2 {
@@ -196,7 +234,7 @@ footer {
     }
 
     img.profile { 
-        top: 330px;
+        top: 290px;
     }
 
     h1, h2 {
@@ -229,7 +267,7 @@ footer {
     }
 
     img.profile { 
-        top: 390px;
+        top: 300px;
     }
 }
 
