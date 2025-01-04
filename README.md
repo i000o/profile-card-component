@@ -34,8 +34,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ## My process
 
-:alien:  
-:alien:  
+:alien: Is there a better `position` value I can assign to the img to make it more responsive?
+:alien: I don't understand `width`/`height` values at all. I feel I have no control.
 :alien:  
 :alien:  
 :alien:
@@ -57,6 +57,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 4. I'm speedy with flexing div items in a layout like this and adjusting space with margins
 5. I can't rely on Chrome Dev Tools for accurate viewport displays. I need to use actual browsers and mobile
 6. I styled mobile based on design of 375px but then needed to code 320px media queries - really annoying
+7. [Control] + Space for property value options - So helpful
 
 ## Take forward
 

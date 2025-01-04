@@ -9,11 +9,15 @@ body {
     align-items: center;
     text-align: center;
     background-color: hsl(185, 75%, 39%); 
-    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg); //root folder issue made the image not load - the problem was simpler than I thought - shaky confidence
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg); //root folder issue made the image not load properly at first 
     background-repeat: no-repeat, no-repeat;
     background-position: -180px -150px, 200px 350px; // XY position
-    background-size: 100%;
+    // background-size: 100%; was making the bg flex in a way that I didn't have control over
+    // background-size: 700px 700px; // should I have used this instead of 'contain'? 
+    background-size: contain;
+    background-attachment: fixed;
     overflow: hidden; 
+    // width: 100vw; // do I need this? 
 }
 
 section { 
@@ -22,7 +26,8 @@ section {
     background-color: #FFFFFF;
     margin: 150px 20px; 
     border-radius: 16px;
-    width: 50em;
+    // width: 50em; // relative width didn't work 
+    max-width: 350px;
     height: auto;
 }
 
@@ -42,14 +47,16 @@ img.profile {
     order: -1;
     align-self: center;
     z-index: 1;
-    position: absolute;
-    top: 240px;
+    position: relative; // absolute before - caused problems
+    top: -40px;
+    margin-bottom: -40px; // to counteract the empty space that comes with position: relative 
 }
 
 div {
     display: flex; 
     justify-content: center;
-    margin-top: 50px;
+    // margin-top: 50px;
+    margin: 0;
 }
 
 h1 {
@@ -71,7 +78,7 @@ h2, h3, p, hr {
 
 h3 {
     font-size: 0.8em;
-    margin: 0;
+    margin: -5px 0 -10px 0;
 }
 
 hr { 
@@ -93,16 +100,16 @@ div.l-stat, div.center-stat, div.r-stat {
     margin: 0;
 }
 
+h4 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
 p {
     font-size: 0.6em;
     letter-spacing: .2em;
-    margin: -20px 0 30px 0;
-}
-
-h4 {
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.08em;
+    margin: -15px 0 30px 0;
 }
 
 h4, p {
@@ -120,94 +127,31 @@ footer {
     margin: 20px;
 }
 
-// redo these in actual viewport, not dev tools 
-
-@media screen and (min-width: 425px) { 
+@media screen and (min-width: 426px) { 
 
     body { 
-        background-size: 90%;
-    }
-
-    img.profile { 
-        top: 260px;
+        background-position: -250px -200px, 300px 400px; // XY position
     }
 }
 
-// @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
 
-//     body { 
-//         background-size: 80%;
-//         background-position: -250px -120px, 400px 300px; // XY position
-//     }
+    body { 
+        background-position: -300px -350px, 350px 400px; // XY position
+    }
+}
 
-//     section { 
-//         max-width: 375px;
-//     }
+@media screen and (min-width: 1024px) { 
 
-//     img.profile { 
-//         top: 270px;
-//     }
+    body { 
+        background-position: -130px -350px, 600px 400px; // XY position
+    }
+}
 
-//     h1, h2 {
-//         font-size: 1em;
-//     }
+@media screen and (min-width: 1440px) { 
 
-//     h3 { 
-//         font-size: 0.8em;
-//     }
-
-//     h4 { 
-//         font-size: 1.1em;
-//     }
-// }
-
-// @media screen and (min-width: 1024px) {
-
-//     body { 
-//         height: 100svh;
-//         background-size: 70%;
-//         background-position: -250px -250px, 500px 500px; // XY position
-//     }
-
-//     section { 
-//         max-width: 375px;
-//     }
-
-//     img.profile { 
-//         top: 290px;
-//     }
-
-//     h1, h2 {
-//         font-size: 1.2em;
-//         margin-bottom: 10px;
-//     }
-
-//     h3 { 
-//         font-size: 1em;
-//     }
-
-//     h4 { 
-//         font-size: 1.2em;
-//     }
-
-//     p {
-//         font-size: 0.7em;
-//     }
-
-//     footer { 
-//         font-size: 0.7em;
-//     }
-// }
-
-// @media screen and (min-width: 1440px) { 
-
-//     body { 
-//         background-size: 80%;
-//         background-position: -500px -450px, 650px 500px; // XY position
-//     }
-
-//     img.profile { 
-//         top: 300px;
-//     }
-// }
+    body { 
+        background-position: -60px -350px, 700px 400px; // XY position
+    }
+}
 
